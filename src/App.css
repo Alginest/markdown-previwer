@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.textBg {
+  width: 500px;
+  background-color: lightblue;
+  height: 300px;
+  box-shadow: 10px 10px 10px rgb(255, 255, 255, 50%);
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 1%;
+  overflow: hidden;
+  padding: 10px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editorDiv {
+  display: flex;
+}
+.hotIcon {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.textBg .editor {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.textBg textarea {
+  width: 100%;
+  border-radius: 1%;
+  height: 95%;
+  background-color: #c0d8d8;
+}
+/*Previewer*/
+.previewerBg {
+  margin-top: 50px;
+  background-color: lightblue;
+  width: 700px;
+  box-shadow: 10px 5px 10px rgb(255, 255, 255, 50%);
+  border: 2px solid black;
+  border-radius: 1%;
+  overflow: hidden;
+  padding-top: 10px;
+}
+hr {
+  width: 95%;
+  margin: 10px 0;
+}
+.hotIconP {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.editorP {
+  margin-left: 5px;
+}
+.previewerBg #preview {
+  background-color: #c0d8d8;
+  border: 1px solid black;
+  padding-left: 5%;
+}
+#preview a {
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+#preview code {
+  margin-top: 10px;
+}
+#preview pre {
+  width: 90%;
+  height: 100px;
+  background-color: white;
+  margin: 10px 0;
+}
+#preview ul {
+  list-style: none;
+}
+#preview blockquote {
+  margin: 10px 0;
+}
+#preview img {
+  width: 300px;
+  margin-left: 180px;
+  margin-top: 20px;
 }
